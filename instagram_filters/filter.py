@@ -17,7 +17,7 @@ class Filter:
 	
 	def execute(self, command, **kwargs):
 		default = dict(
-			filename=self.filename,
+			filename = '\'' + self.filename + '\'',
 			width = self.image().size[0],
 			height = self.image().size[1]
 		)
